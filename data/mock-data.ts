@@ -27,7 +27,7 @@ export const bettingSites: BettingSite[] = [
     features: ["Price Boosts", "Same Game Acca", "Live Streaming"],
     welcomeOffer: "or 100 Cash Spins",
     terms:
-      "18+ New UK customers only. Min deposit £5. Place a first bet of £5+ at odds of 1/2 (1.5) or greater on football within 14 days of sign-up. Receive 5 x £5 free bet tokens within 24 hours of settlement. Free bets expire after 7 days. Payment method and market restrictions apply. T&Cs apply. BeGambleAware.org",
+      "18+ New players only. Deposit & wager at least £10 to get free spins. Offer must be activated before depositing. Free Spins winnings are cash. No max cash out. Eligibility is restricted for suspected abuse. Skrill deposits excluded. Free Spins value £0.10 per spin. Free Spins expire in 48 hours. Free bet offer: Minimum odds 2.0. Free bet value will be deducted from free bet winnings. T&Cs apply. BeGambleAware.org",
     userRating: 9.3,
     votes: 5891,
     link: "https://www.quickbet.co.uk/",
