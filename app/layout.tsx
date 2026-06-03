@@ -59,9 +59,9 @@ export const metadata: Metadata = {
     "geo.placename": "United Kingdom",
   },
   icons: {
-    icon: [{ url: SITE.logo, type: "image/svg+xml" }],
-    shortcut: [{ url: "/favicon.ico", type: "image/svg+xml" }],
-    apple: [{ url: SITE.logo, type: "image/svg+xml" }],
+    icon: [{ url: SITE.logo, type: "image/png" }],
+    shortcut: [{ url: "/favicon.ico", type: "image/x-icon" }],
+    apple: [{ url: SITE.logo, type: "image/png" }],
   },
 }
 

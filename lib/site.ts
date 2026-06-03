@@ -6,7 +6,7 @@ export const SITE = {
   tagline: "Independent ratings of the best betting sites in Great Britain",
   description:
     "britishtopbetsites.co.uk ranks the best UKGC-licensed betting sites in Great Britain. Compare welcome offers, odds, payments, safer gambling tools, and editorial scores in one place.",
-  logo: "/logo.svg",
+  logo: "/logo.png",
   logoAlt: "British Top Bet Sites logo",
   locale: "en-GB",
 } as const
