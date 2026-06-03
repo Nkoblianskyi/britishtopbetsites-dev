@@ -146,7 +146,7 @@ export function InfoSections() {
           {factHighlights.map((item) => (
             <div
               key={item.label}
-              className="rounded-lg border-2 border-[var(--ui-border)] bg-gradient-to-b from-green-50/90 to-white p-4"
+              className="rounded-lg border-2 border-[var(--ui-border)] bg-gradient-to-b from-blue-50/90 to-white p-4"
             >
               <p className="font-display text-2xl font-bold tracking-tight text-[var(--ui-accent)] sm:text-3xl">
                 {item.stat}

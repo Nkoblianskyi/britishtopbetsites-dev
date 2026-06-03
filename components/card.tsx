@@ -130,7 +130,7 @@ export function Card({ site, rank }: SiteCardProps) {
             <div className="flex w-[16%] flex-col items-center justify-center border-l border-[var(--ui-border)] p-2">
               {starsRow}
             </div>
-            <div className="flex w-[10%] shrink-0 items-center justify-center border-l border-[var(--ui-border)] bg-green-50/60">
+            <div className="flex w-[10%] shrink-0 items-center justify-center border-l border-[var(--ui-border)] bg-blue-50/60">
               <span className="font-display text-4xl font-semibold leading-none text-[var(--ui-accent)]">
                 {site.rating.toFixed(1)}
               </span>
@@ -197,7 +197,7 @@ export function Card({ site, rank }: SiteCardProps) {
               <div className="flex flex-col items-center justify-center border-r border-[var(--ui-border)] py-3">
                 {starsRow}
               </div>
-              <div className="flex flex-col items-center justify-center bg-green-50/60 py-3">
+              <div className="flex flex-col items-center justify-center bg-blue-50/60 py-3">
                 <span className="font-display text-3xl font-semibold leading-none text-[var(--ui-accent)]">
                   {site.rating.toFixed(1)}
                 </span>

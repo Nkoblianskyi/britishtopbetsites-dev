@@ -88,7 +88,7 @@ export default function ResponsibleGamingPage() {
               href={org.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="ui-surface-inset block bg-white p-3 no-underline transition-colors hover:bg-green-50/80"
+              className="ui-surface-inset block bg-white p-3 no-underline transition-colors hover:bg-blue-50/80"
               aria-label={`Visit ${org.name} at ${org.site} (opens in new tab)`}
             >
               <h3 className="font-display font-bold text-[var(--ui-accent)]">{org.name}</h3>

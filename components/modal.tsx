@@ -42,7 +42,7 @@ export function Modal({ bettingSites }: TopOfferModalProps) {
       <div className="ui-modal relative w-full max-w-md animate-fade-in">
         <div className="ui-modal-header">
           <div>
-            <p className="text-[10px] font-display uppercase tracking-widest text-[var(--ui-cream)]/70">Editor&apos;s top pick</p>
+            <p className="text-[10px] font-display uppercase tracking-widest text-white/80">Editor&apos;s top pick</p>
             <h2 id="top-offer-title" className="ui-modal-title">
               {site.name} welcome offer
             </h2>

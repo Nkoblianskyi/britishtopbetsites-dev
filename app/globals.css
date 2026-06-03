@@ -5,38 +5,38 @@
 @layer base {
   :root {
     --background: 42 33% 96%;
-    --foreground: 150 30% 12%;
+    --foreground: 220 30% 12%;
     --card: 42 40% 98%;
-    --card-foreground: 150 30% 12%;
+    --card-foreground: 220 30% 12%;
     --popover: 42 40% 98%;
-    --popover-foreground: 150 30% 12%;
-    --primary: 152 45% 22%;
+    --popover-foreground: 220 30% 12%;
+    --primary: 221 85% 21%;
     --primary-foreground: 42 40% 98%;
     --secondary: 42 25% 90%;
-    --secondary-foreground: 150 25% 18%;
+    --secondary-foreground: 220 25% 18%;
     --muted: 42 20% 92%;
-    --muted-foreground: 150 10% 38%;
-    --accent: 152 55% 28%;
+    --muted-foreground: 220 10% 38%;
+    --accent: 221 70% 33%;
     --accent-foreground: 42 40% 98%;
     --destructive: 0 72% 48%;
     --destructive-foreground: 0 0% 100%;
-    --border: 150 15% 82%;
+    --border: 220 15% 82%;
     --input: 42 40% 98%;
-    --ring: 152 45% 22%;
+    --ring: 221 85% 21%;
     --radius: 6px;
 
-    --ui-bg-top: #1b4332;
-    --ui-bg-mid: #2d6a4f;
-    --ui-bg-bottom: #40916c;
+    --ui-bg-top: #012169;
+    --ui-bg-mid: #1e3a8a;
+    --ui-bg-bottom: #2563eb;
     --ui-panel: #faf7f0;
-    --ui-text: #1a2e1a;
-    --ui-muted: #4a5d4a;
-    --ui-accent: #1b4332;
-    --ui-accent-light: #40916c;
+    --ui-text: #0f172a;
+    --ui-muted: #475569;
+    --ui-accent: #012169;
+    --ui-accent-light: #2563eb;
     --ui-gold: #c9a227;
     --ui-red: #b91c1c;
     --ui-cream: #f5f0e6;
-    --ui-border: rgba(27, 67, 50, 0.18);
+    --ui-border: rgba(1, 33, 105, 0.18);
     --ui-stripe: rgba(255, 255, 255, 0.06);
   }
 }
@@ -77,7 +77,7 @@
     border-radius: 8px;
     box-shadow:
       0 2px 0 var(--ui-gold),
-      0 12px 32px rgba(15, 40, 25, 0.18);
+      0 12px 32px rgba(10, 25, 60, 0.18);
     overflow: hidden;
   }
 
@@ -91,7 +91,7 @@
     text-transform: uppercase;
     color: var(--ui-cream);
     border-bottom: 2px solid var(--ui-gold);
-    background: linear-gradient(180deg, #2d6a4f 0%, var(--ui-accent) 100%);
+    background: linear-gradient(180deg, #1e3a8a 0%, var(--ui-accent) 100%);
   }
 
   .ui-panel-body {
@@ -106,9 +106,9 @@
 
   .ui-surface-inset {
     background: #fff;
-    border: 1px solid #c8d5c8;
+    border: 1px solid #c8d0e0;
     border-radius: 6px;
-    box-shadow: inset 0 2px 4px rgba(27, 67, 50, 0.06);
+    box-shadow: inset 0 2px 4px rgba(1, 33, 105, 0.06);
   }
 
   .ui-btn {
@@ -133,7 +133,7 @@
 
   .ui-btn:hover {
     transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(27, 67, 50, 0.15);
+    box-shadow: 0 4px 12px rgba(1, 33, 105, 0.15);
   }
 
   .ui-btn:active {
@@ -143,8 +143,8 @@
 
   .ui-btn-primary {
     color: var(--ui-cream);
-    border-color: #14532d;
-    background: linear-gradient(180deg, #40916c 0%, var(--ui-accent) 55%, #14532d 100%);
+    border-color: #001538;
+    background: linear-gradient(180deg, #2563eb 0%, var(--ui-accent) 55%, #001538 100%);
     box-shadow: 0 2px 0 var(--ui-gold);
   }
 
@@ -185,7 +185,7 @@
 
   .ui-badge-gold {
     background: linear-gradient(180deg, #e8c547 0%, var(--ui-gold) 100%);
-    color: #1a2e1a;
+    color: #0f172a;
   }
 
   .ui-badge-red {
@@ -211,7 +211,7 @@
   }
 
   .ui-logo-chip:hover {
-    box-shadow: 0 4px 12px rgba(27, 67, 50, 0.12);
+    box-shadow: 0 4px 12px rgba(1, 33, 105, 0.12);
     transform: translateY(-1px);
   }
 
@@ -239,7 +239,7 @@
   }
 
   .ui-nav-pill:hover {
-    background: rgba(27, 67, 50, 0.08);
+    background: rgba(1, 33, 105, 0.08);
     color: var(--ui-accent);
     border-color: var(--ui-border);
   }
@@ -272,7 +272,7 @@
     border-radius: 10px;
     box-shadow:
       0 4px 0 var(--ui-gold),
-      0 24px 48px rgba(15, 40, 25, 0.28);
+      0 24px 48px rgba(10, 25, 60, 0.28);
     overflow: hidden;
   }
 
@@ -283,7 +283,7 @@
     gap: 12px;
     padding: 14px 16px;
     border-bottom: 2px solid var(--ui-gold);
-    background: linear-gradient(180deg, #2d6a4f 0%, var(--ui-accent) 100%);
+    background: linear-gradient(180deg, #1e3a8a 0%, var(--ui-accent) 100%);
   }
 
   .ui-modal-title {
@@ -344,7 +344,7 @@
         transparent 40px,
         transparent 80px
       ),
-      linear-gradient(135deg, #14532d 0%, #1b4332 40%, #2d6a4f 100%);
+      linear-gradient(135deg, #001538 0%, #012169 40%, #1e3a8a 100%);
     border-radius: 6px;
     position: relative;
     overflow: hidden;
