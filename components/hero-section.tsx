@@ -19,14 +19,14 @@ export function HeroSection({ onAdvertiserModalOpen, onTermsModalOpen }: HeroSec
 
         <div className="relative z-10 flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between sm:gap-4">
           <div className="min-w-0 flex-1">
-            <h1 className="font-display text-lg font-semibold uppercase leading-snug tracking-wide text-[var(--ui-cream)] sm:text-xl">
+            <h1 className="font-display text-lg font-semibold uppercase leading-snug tracking-wide sm:text-xl">
               Best betting sites in Great Britain, ranked
             </h1>
-            <p className="mt-2 max-w-xl text-xs leading-relaxed text-[var(--ui-cream)]/85 sm:text-sm">
+            <p className="mt-2 max-w-xl text-xs leading-relaxed sm:text-sm">
               Independent ratings of UKGC-licensed bookmakers. Compare welcome offers, odds, payments, and safer gambling
               tools before you open an account.
             </p>
-            <p className="mt-1.5 text-[11px] leading-snug text-[var(--ui-cream)]/70 sm:text-xs">
+            <p className="hero-meta mt-1.5 text-[11px] leading-snug sm:text-xs">
               Updated {monthYear} · UK adults 18+ only
             </p>
           </div>

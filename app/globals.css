@@ -348,6 +348,19 @@
     border-radius: 6px;
     position: relative;
     overflow: hidden;
+    color: #f5f0e6;
+  }
+
+  .pitch-hero-bg h1 {
+    color: #ffffff;
+  }
+
+  .pitch-hero-bg p {
+    color: rgba(245, 240, 230, 0.95);
+  }
+
+  .pitch-hero-bg .hero-meta {
+    color: rgba(245, 240, 230, 0.78);
   }
 
   .pitch-hero-bg::before {
