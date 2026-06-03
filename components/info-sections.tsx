@@ -4,12 +4,12 @@ import { PitchFrame } from "./pitch-ui"
 
 const guideSections = [
   {
-    title: "Pick a bookie that fits your football",
-    body: "Premier League acca fan? Lower-league punter? In-play trader? Start with the competition you bet most, then check whether odds, cash-out, and bet builders match how you actually play.",
+    title: "Pick a bookie that fits you",
+    body: "Acca fan? Racing punter? In-play trader? Start with how you bet most, then check whether odds, cash-out, and bet builders match your style.",
   },
   {
     title: "How our table is built",
-    body: "We score licensing and safer-gambling tools first, then football market depth, welcome-offer clarity, withdrawal speed, mobile stability, and support response times. Scores are editorial, not paid placements.",
+    body: "We score licensing and safer-gambling tools first, then market depth, welcome-offer clarity, withdrawal speed, mobile stability, and support response times. Scores are editorial, not paid placements.",
   },
   {
     title: "Welcome offers and the fine print",
@@ -40,7 +40,7 @@ const faqItems = [
   {
     question: "What does the star rating mean?",
     answer:
-      "Our editorial score reflects licensing, football market coverage, odds value, payment speed, mobile app quality, and bonus transparency. User vote counts shown on each card reflect community feedback at review time.",
+      "Our editorial score reflects licensing, market coverage, odds value, payment speed, mobile app quality, and bonus transparency. User vote counts shown on each card reflect community feedback at review time.",
   },
   {
     question: "Where can I get help if gambling feels out of control?",
@@ -63,18 +63,18 @@ const factHighlights = [
   {
     stat: "0.1 sec",
     label: "in-play price refresh",
-    detail: "Live odds can move faster than a broadcast. UK books build in short bet delays so prices match pitch reality and protect both the punter and market integrity.",
+    detail: "Live odds can move faster than a broadcast. UK books build in short bet delays so prices match live action and protect both the punter and market integrity.",
   },
 ]
 
 const editorialBlocks = [
   {
-    title: "Football betting in Britain today",
+    title: "Betting in Britain today",
     lead: "Remote wagering here is one of the most tightly supervised markets on the planet, yet the product surface still feels fast and crowded.",
     body: [
       "Every brand on our list holds a UK Gambling Commission licence for customers in Great Britain. That licence is not a sticker: it ties operators to ongoing audits, source-of-funds checks where risk demands them, and advertising rules that cap how loudly welcome offers can shout.",
       "Most punters now place the majority of stakes on mobile. That shift pushed firms to invest in bet builders, partial cash-out, and same-game parlays. The trade-off is complexity. A slick interface can hide wagering multiples buried three taps deep, which is why we read bonus terms as carefully as we read headline odds.",
-      "Competition between books keeps margins thin on popular football markets, but niche leagues or antepost cups can swing widely. Comparing one site is rarely enough if you bet across divisions and codes.",
+      "Competition between books keeps margins thin on popular markets, but niche sports or antepost events can swing widely. Comparing one site is rarely enough if you bet across different codes.",
     ],
     fact: "Since 2014, remote operators serving GB must hold a UKGC licence. Offshore grey-market sites are outside that safety net.",
   },
@@ -103,7 +103,7 @@ const editorialBlocks = [
 export function InfoSections() {
   return (
     <div className="mt-4 space-y-4">
-      <PitchFrame title="Football betting guide">
+      <PitchFrame title="UK betting guide">
         <div className="ui-surface-inset max-h-[420px] space-y-4 overflow-y-auto p-4 sm:max-h-none">
           {guideSections.map((s) => (
             <div key={s.title}>
@@ -136,7 +136,7 @@ export function InfoSections() {
 
       <PitchFrame title="Betting, safety and service: the UK market in plain terms">
         <p className="mb-5 text-sm leading-relaxed text-[var(--ui-muted)] sm:text-[15px]">
-          Below is a straight read on how licensed football betting works in Great Britain: the rules operators live
+          Below is a straight read on how licensed betting works in Great Britain: the rules operators live
           under, the habits that keep play under control, and the service details that separate a solid book from a
           frustrating one. Woven in are figures and context we think every punter should know before opening another
           account.

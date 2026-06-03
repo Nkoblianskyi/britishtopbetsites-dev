@@ -5,11 +5,11 @@ import { SITE, SITE_URL } from "@/lib/site"
 
 export const metadata: Metadata = {
   title: "Terms and Conditions",
-  description: `Rules for using ${SITE.domain}, a UK football betting comparison website.`,
+  description: `Rules for using ${SITE.domain}, a UK betting site comparison website.`,
   alternates: { canonical: `${SITE_URL}/terms` },
   openGraph: {
     title: `Terms and Conditions | ${SITE.name}`,
-    description: `Rules for using ${SITE.domain}, a UK football betting comparison website.`,
+    description: `Rules for using ${SITE.domain}, a UK betting site comparison website.`,
     url: `${SITE_URL}/terms`,
   },
 }

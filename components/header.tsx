@@ -18,7 +18,7 @@ export function Header() {
               {SITE.name}
             </p>
             <p className="hidden text-xs text-[var(--ui-muted)] sm:block">
-              {SITE.domain} · Football bookmaker guide
+              {SITE.domain} · UK betting site ratings
             </p>
           </div>
         </Link>

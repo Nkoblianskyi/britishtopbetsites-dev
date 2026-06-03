@@ -7,7 +7,7 @@ export const bettingSites: BettingSite[] = [
     logo: "/megaways.svg",
     rating: 9.6,
     bonus: "Bet £10",
-    description: "Football markets with fast in-play pricing",
+    description: "Strong sports markets with fast in-play pricing",
     features: ["Acca Boosts", "Cash Out", "Bet Builder"],
     welcomeOffer: "Get £30 in Free Bets",
     terms:

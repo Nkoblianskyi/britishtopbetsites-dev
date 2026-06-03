@@ -42,7 +42,7 @@ export function Card({ site, rank }: SiteCardProps) {
     setIsTermsExpanded(!isTermsExpanded)
   }
 
-  const badgeText = rank === 1 ? "Captain's pick" : rank === 2 ? "Match day deal" : ""
+  const badgeText = rank === 1 ? "Top pick" : rank === 2 ? "Hot deal" : ""
 
   const starsRow = (
     <div className="flex flex-col items-center">

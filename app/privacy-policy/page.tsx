@@ -26,7 +26,7 @@ export default function PrivacyPolicyPage() {
     >
       <LegalCallout variant="info" title="Plain-English summary">
         <p>
-          {SITE.name} runs {SITE.domain} for adults comparing football bookmakers. We collect limited technical data to keep the
+          {SITE.name} runs {SITE.domain} for adults comparing UK betting sites. We collect limited technical data to keep the
           site secure and understand traffic. With your consent, we may use analytics and affiliate measurement. We do not
           sell personal information to data brokers.
         </p>

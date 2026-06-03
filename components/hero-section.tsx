@@ -1,6 +1,6 @@
 "use client"
 
-import { PitchFrame, SaferGamblingLogos } from "./pitch-ui"
+import { PitchFrame } from "./pitch-ui"
 
 interface HeroSectionProps {
   onAdvertiserModalOpen: () => void
@@ -10,58 +10,43 @@ interface HeroSectionProps {
 export function HeroSection({ onAdvertiserModalOpen, onTermsModalOpen }: HeroSectionProps) {
   const monthYear = new Date().toLocaleDateString("en-GB", { month: "long", year: "numeric" })
 
-  const trustItems = [
-    { label: "UKGC", type: "flag" as const },
-    { label: "18+", type: "age" as const },
-    { label: "Fast pay*", type: "icon" as const, icon: "⚽" },
-  ]
+  const trustItems = ["Licence", "Security", "18+"]
 
   return (
-    <PitchFrame title={`Football rankings · ${monthYear}`} className="mb-2" compact>
-      <div className="pitch-hero-bg relative px-4 py-3 sm:px-5 sm:py-4">
+    <PitchFrame title={`UK betting site rankings · ${monthYear}`} className="mb-2">
+      <div className="pitch-hero-bg relative px-5 py-5 sm:px-6 sm:py-6">
         <div className="pitch-center-circle hidden sm:block" aria-hidden="true" />
 
-        <div className="relative z-10 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between sm:gap-3">
+        <div className="relative z-10 flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between sm:gap-4">
           <div className="min-w-0 flex-1">
-            <h1 className="font-display text-base font-semibold uppercase leading-snug tracking-wide text-[var(--ui-cream)] sm:text-lg">
-              Top UK football betting sites, side by side
+            <h1 className="font-display text-lg font-semibold uppercase leading-snug tracking-wide text-[var(--ui-cream)] sm:text-xl">
+              Best betting sites in Great Britain, ranked
             </h1>
-            <p className="mt-0.5 text-[11px] leading-snug text-[var(--ui-cream)]/80">
-              UKGC-licensed bookmakers · Updated {monthYear}
+            <p className="mt-2 max-w-xl text-xs leading-relaxed text-[var(--ui-cream)]/85 sm:text-sm">
+              Independent ratings of UKGC-licensed bookmakers. Compare welcome offers, odds, payments, and safer gambling
+              tools before you open an account.
+            </p>
+            <p className="mt-1.5 text-[11px] leading-snug text-[var(--ui-cream)]/70 sm:text-xs">
+              Updated {monthYear} · UK adults 18+ only
             </p>
           </div>
-          <div className="flex flex-wrap gap-1.5" role="list" aria-label="Trust indicators">
-            {trustItems.map((item) => (
-              <span key={item.label} className="ui-badge ui-badge-gold !px-2 !py-0.5 !text-[10px]" role="listitem">
-                {item.type === "flag" && (
-                  <span aria-hidden="true" className="text-[10px]">
-                    🇬🇧
-                  </span>
-                )}
-                {item.type === "age" && (
-                  <span aria-hidden="true" className="text-[8px] font-bold text-[var(--ui-red)]">
-                    18+
-                  </span>
-                )}
-                {item.type === "icon" && (
-                  <span aria-hidden="true" className="text-[10px]">
-                    {item.icon}
-                  </span>
-                )}
-                {item.label}
+          <div className="flex flex-wrap gap-1.5 sm:shrink-0" role="list" aria-label="Trust indicators">
+            {trustItems.map((label) => (
+              <span key={label} className="ui-badge ui-badge-gold !px-2.5 !py-1 !text-[10px] sm:!text-[11px]" role="listitem">
+                {label}
               </span>
             ))}
           </div>
         </div>
       </div>
 
-      <div className="ui-surface mt-2 space-y-1.5 p-2">
-        <p className="text-[10px] leading-snug text-[var(--ui-muted)]">
+      <div className="ui-surface mt-2 p-2.5">
+        <p className="text-[10px] leading-snug text-[var(--ui-muted)] sm:text-[11px]">
           18+ · Wagering applies.{" "}
           <button
             type="button"
             onClick={onAdvertiserModalOpen}
-            className="ui-link text-[10px]"
+            className="ui-link text-[10px] sm:text-[11px]"
             aria-label="Open how we are funded disclosure"
           >
             How we earn
@@ -70,13 +55,12 @@ export function HeroSection({ onAdvertiserModalOpen, onTermsModalOpen }: HeroSec
           <button
             type="button"
             onClick={onTermsModalOpen}
-            className="ui-link text-[10px]"
+            className="ui-link text-[10px] sm:text-[11px]"
             aria-label="Open site rules summary"
           >
             Site rules
           </button>
         </p>
-        <SaferGamblingLogos compact />
       </div>
     </PitchFrame>
   )

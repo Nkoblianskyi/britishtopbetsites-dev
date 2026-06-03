@@ -3,11 +3,11 @@ import UkBettingPage from "../components/uk-betting-page"
 import { SITE, SITE_URL } from "@/lib/site"
 
 export const metadata: Metadata = {
-  title: `${SITE.name} | UK Football Bookmaker Rankings`,
+  title: `${SITE.name} | Best UK Betting Sites Ranked`,
   description: SITE.description,
   alternates: { canonical: SITE_URL },
   openGraph: {
-    title: `${SITE.name} | UK Football Bookmaker Rankings`,
+    title: `${SITE.name} | Best UK Betting Sites Ranked`,
     description: SITE.description,
     url: SITE_URL,
   },

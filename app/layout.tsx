@@ -23,13 +23,13 @@ const sourceSans = Source_Sans_3({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: `${SITE.name} | UK Football Bookmaker Rankings`,
+    default: `${SITE.name} | Best UK Betting Sites Ranked`,
     template: `%s | ${SITE.name}`,
   },
   description: SITE.description,
   keywords: [
     "UK betting sites",
-    "football bookmakers",
+    "best betting sites UK",
     "British betting comparison",
     "UKGC licensed bookmakers",
     "welcome offers UK",
@@ -46,12 +46,12 @@ export const metadata: Metadata = {
     locale: SITE.locale,
     url: SITE_URL,
     siteName: SITE.name,
-    title: `${SITE.name} | UK Football Bookmaker Rankings`,
+    title: `${SITE.name} | Best UK Betting Sites Ranked`,
     description: SITE.description,
   },
   twitter: {
     card: "summary_large_image",
-    title: `${SITE.name} | UK Football Bookmaker Rankings`,
+    title: `${SITE.name} | Best UK Betting Sites Ranked`,
     description: SITE.description,
   },
   other: {

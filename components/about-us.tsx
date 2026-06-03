@@ -15,7 +15,7 @@ const pillars = [
   },
   {
     title: "One scorecard for all",
-    text: "Rankings follow a single checklist: safety, football markets, value, payments, app quality, and bonus clarity.",
+    text: "Rankings follow a single checklist: safety, markets, value, payments, app quality, and bonus clarity.",
   },
 ]
 
@@ -24,7 +24,7 @@ export function AboutUs() {
     <div className="mt-4">
       <PitchFrame title={`About ${SITE.shortName}`}>
         <p className="mb-4 text-sm leading-relaxed text-[var(--ui-muted)]">
-          We test UKGC-licensed football bookmakers, explain trade-offs in plain English, and link you to official
+          We test UKGC-licensed betting sites, explain trade-offs in plain English, and link you to official
           sign-up pages when you are ready. Affiliate income funds the site. It does not buy top rankings.
         </p>
 

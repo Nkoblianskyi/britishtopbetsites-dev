@@ -42,16 +42,16 @@ export function Modal({ bettingSites }: TopOfferModalProps) {
       <div className="ui-modal relative w-full max-w-md animate-fade-in">
         <div className="ui-modal-header">
           <div>
-            <p className="text-[10px] font-display uppercase tracking-widest text-[var(--ui-cream)]/70">Match day spotlight</p>
+            <p className="text-[10px] font-display uppercase tracking-widest text-[var(--ui-cream)]/70">Editor&apos;s top pick</p>
             <h2 id="top-offer-title" className="ui-modal-title">
-              {site.name} top offer
+              {site.name} welcome offer
             </h2>
           </div>
           <ModalCloseButton onClick={close} label="Close top offer dialog" />
         </div>
 
         <div className="space-y-4 p-5 text-center">
-          <span className="ui-badge ui-badge-gold">Today&apos;s #1 ranked bookmaker</span>
+          <span className="ui-badge ui-badge-gold">Today&apos;s #1 ranked site</span>
 
           <div className="pitch-hero-bg mx-auto max-w-[220px] rounded-md p-4">
             <img
@@ -61,12 +61,12 @@ export function Modal({ bettingSites }: TopOfferModalProps) {
             />
           </div>
 
-          <div id="top-offer-desc" className="ui-surface rounded-lg p-4 text-left">
-            <p className="font-display text-sm font-semibold uppercase tracking-wide text-[var(--ui-accent)]">
+          <div id="top-offer-desc" className="ui-surface rounded-lg px-4 py-6 text-center">
+            <p className="font-display text-3xl font-bold leading-tight text-[var(--ui-text)] sm:text-4xl">{site.bonus}</p>
+            <p className="mt-2 font-display text-lg font-semibold uppercase tracking-wide text-[var(--ui-accent)] sm:text-xl">
               {site.welcomeOffer}
             </p>
-            <p className="mt-1 text-sm font-medium text-[var(--ui-text)]">{site.bonus}</p>
-            <div className="mt-2 flex justify-center gap-0.5" role="img" aria-label={`${site.rating.toFixed(1)} out of 5 stars`}>
+            <div className="mt-3 flex justify-center gap-0.5" role="img" aria-label={`${site.rating.toFixed(1)} out of 5 stars`}>
               {[...Array(5)].map((_, i) => (
                 <Star key={i} className="h-4 w-4 fill-[var(--ui-gold)] text-[var(--ui-gold)]" aria-hidden="true" />
               ))}

@@ -26,7 +26,7 @@ export function AdvertiserDisclosureModal({ isOpen, onClose }: AdvertiserDisclos
           </p>
           <p>
             Commissions do not buy placement. Scores come from the same checklist for every brand: UKGC licence, safer
-            gambling tools, football odds depth, payments, support, and bonus transparency.
+            gambling tools, market depth, payments, support, and bonus transparency.
           </p>
           <p>
             Sponsored slots, if any, are labelled separately and must still meet UK advertising rules, including 18+

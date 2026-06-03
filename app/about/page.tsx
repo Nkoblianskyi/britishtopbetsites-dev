@@ -10,11 +10,11 @@ import { SITE, SITE_URL } from "@/lib/site"
 
 export const metadata: Metadata = {
   title: "About Us",
-  description: `Who runs ${SITE.name}, how UK football bookmakers are reviewed, and how affiliate funding works.`,
+  description: `Who runs ${SITE.name}, how UK betting sites are reviewed, and how affiliate funding works.`,
   alternates: { canonical: `${SITE_URL}/about` },
   openGraph: {
     title: `About Us | ${SITE.name}`,
-    description: `Who runs ${SITE.name}, how UK football bookmakers are reviewed, and how affiliate funding works.`,
+    description: `Who runs ${SITE.name}, how UK betting sites are reviewed, and how affiliate funding works.`,
     url: `${SITE_URL}/about`,
   },
 }
@@ -31,7 +31,7 @@ export default function AboutPage() {
     >
       <LegalCallout variant="info" title="Quick facts">
         <p>
-          {SITE.name} is a UK-focused publishing project. We compare licensed football sportsbooks for adults in Great
+          {SITE.name} is a UK-focused publishing project. We compare licensed betting sites for adults in Great
           Britain. We do not accept bets, hold balances, or settle wagers.
         </p>
       </LegalCallout>
@@ -53,7 +53,7 @@ export default function AboutPage() {
 
       <LegalSection number="1" title="Why we built this site">
         <p>
-          British football punters deserve a straight answer: which bookmaker is worth an account for the way you bet?
+          British punters deserve a straight answer: which betting site is worth an account for the way you play?
           We built {SITE.domain} to collect UKGC-licensed brands in one ranked view, explain trade-offs without hype,
           and send you to official registration pages when you are ready.
         </p>
@@ -69,7 +69,7 @@ export default function AboutPage() {
       <LegalSection number="3" title="Our review scorecard">
         <ul>
           <li>Regulatory status, account security, and safer-gambling tool depth</li>
-          <li>Pre-match and in-play football markets across leagues and cups</li>
+          <li>Pre-match and in-play markets across sports and events</li>
           <li>Odds competitiveness on representative markets (not one cherry-picked price)</li>
           <li>Welcome-offer clarity: wagering multiples, expiry, and excluded bet types</li>
           <li>Banking options, withdrawal experience, and helpdesk quality</li>
