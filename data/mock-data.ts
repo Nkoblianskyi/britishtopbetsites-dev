@@ -4,7 +4,7 @@ export const bettingSites: BettingSite[] = [
   {
     id: 1,
     name: "Megaways",
-    logo: "/megaways.svg",
+    logo: "/megaways-logo.png",
     rating: 9.6,
     bonus: "Bet £10",
     description: "Strong sports markets with fast in-play pricing",
@@ -20,12 +20,12 @@ export const bettingSites: BettingSite[] = [
   {
     id: 2,
     name: "Quickbet",
-    logo: "/quickbet.svg",
+    logo: "/quickbet-casino.webp",
     rating: 9.3,
-    bonus: "Bet £5",
+    bonus: "Bet £10 Get £10 Free Bet",
     description: "Quick slips and weekend coupon focus",
     features: ["Price Boosts", "Same Game Acca", "Live Streaming"],
-    welcomeOffer: "Get £25 in Free Bets",
+    welcomeOffer: "or 100 Cash Spins",
     terms:
       "18+ New UK customers only. Min deposit £5. Place a first bet of £5+ at odds of 1/2 (1.5) or greater on football within 14 days of sign-up. Receive 5 x £5 free bet tokens within 24 hours of settlement. Free bets expire after 7 days. Payment method and market restrictions apply. T&Cs apply. BeGambleAware.org",
     userRating: 9.3,

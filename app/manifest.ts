@@ -14,7 +14,7 @@ export default function manifest(): MetadataRoute.Manifest {
     dir: "ltr",
     categories: ["entertainment", "sports"],
     icons: [
-      { src: "/favicon.ico", sizes: "any", type: "image/x-icon" },
+      { src: "/favicon.ico", sizes: "any", type: "image/svg+xml" },
       { src: SITE.logo, sizes: "512x512", type: "image/svg+xml", purpose: "any" },
     ],
   }

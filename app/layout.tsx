@@ -58,6 +58,11 @@ export const metadata: Metadata = {
     "geo.region": "GB",
     "geo.placename": "United Kingdom",
   },
+  icons: {
+    icon: [{ url: SITE.logo, type: "image/svg+xml" }],
+    shortcut: [{ url: "/favicon.ico", type: "image/svg+xml" }],
+    apple: [{ url: SITE.logo, type: "image/svg+xml" }],
+  },
 }
 
 const orgJsonLd = {
