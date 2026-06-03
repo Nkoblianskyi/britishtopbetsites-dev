@@ -30,7 +30,7 @@ export function AboutUs() {
 
         <div className="grid gap-3 sm:grid-cols-3">
           {pillars.map((p) => (
-            <div key={p.title} className="ui-surface p-3 sm:p-4">
+            <div key={p.title} className="ui-section-block p-3 sm:p-4">
               <h3 className="mb-1 font-display text-sm font-semibold uppercase tracking-wide text-[var(--ui-accent)]">
                 {p.title}
               </h3>

@@ -40,7 +40,7 @@ export function HeroSection({ onAdvertiserModalOpen, onTermsModalOpen }: HeroSec
         </div>
       </div>
 
-      <div className="ui-surface mt-2 p-2.5">
+      <div className="ui-disclosure-bar mt-2 p-2.5">
         <p className="text-[10px] leading-snug text-[var(--ui-muted)] sm:text-[11px]">
           18+ · Wagering applies.{" "}
           <button

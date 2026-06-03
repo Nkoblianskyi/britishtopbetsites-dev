@@ -112,8 +112,8 @@ export function Card({ site, rank }: SiteCardProps) {
           className="hidden cursor-pointer no-underline lg:block"
           aria-label={`Claim ${site.welcomeOffer} at ${site.name}`}
         >
-          <div className="flex min-h-[140px] items-stretch overflow-hidden rounded-md border border-[var(--ui-border)]">
-            <div className="flex w-[26%] items-center justify-center bg-[var(--ui-cream)] p-3">
+          <div className="flex min-h-[140px] items-stretch overflow-hidden ui-offer-row">
+            <div className="flex w-[26%] items-center justify-center ui-offer-row-accent p-3">
               <img
                 src={site.logo || "/placeholder.svg"}
                 alt={`${site.name} logo`}
@@ -130,7 +130,7 @@ export function Card({ site, rank }: SiteCardProps) {
             <div className="flex w-[16%] flex-col items-center justify-center border-l border-[var(--ui-border)] p-2">
               {starsRow}
             </div>
-            <div className="flex w-[10%] shrink-0 items-center justify-center border-l border-[var(--ui-border)] bg-blue-50/60">
+            <div className="flex w-[10%] shrink-0 items-center justify-center border-l border-[var(--ui-border)] ui-score-cell">
               <span className="font-display text-4xl font-semibold leading-none text-[var(--ui-accent)]">
                 {site.rating.toFixed(1)}
               </span>
@@ -151,8 +151,8 @@ export function Card({ site, rank }: SiteCardProps) {
           className="hidden cursor-pointer no-underline md:block lg:hidden"
           aria-label={`Claim ${site.welcomeOffer} at ${site.name}`}
         >
-          <div className="grid grid-cols-2 overflow-hidden rounded-md border border-[var(--ui-border)]">
-            <div className="flex items-center justify-center bg-[var(--ui-cream)] p-3">
+          <div className="grid grid-cols-2 overflow-hidden ui-offer-row">
+            <div className="flex items-center justify-center ui-offer-row-accent p-3">
               <img src={site.logo || "/placeholder.svg"} alt={`${site.name} logo`} className="max-h-16 object-contain" />
             </div>
             <div className="border-l border-[var(--ui-border)] p-2 text-center">
@@ -177,13 +177,13 @@ export function Card({ site, rank }: SiteCardProps) {
           className="block cursor-pointer no-underline md:hidden"
           aria-label={`Claim ${site.welcomeOffer} at ${site.name}`}
         >
-          <div className="flex flex-col overflow-hidden rounded-md border border-[var(--ui-border)]">
+          <div className="flex flex-col overflow-hidden ui-offer-row">
             {badgeText && (
               <div className="bg-[var(--ui-accent)] px-2 py-1 text-center font-display text-[10px] font-semibold uppercase tracking-wider text-[var(--ui-cream)]">
                 {badgeText}
               </div>
             )}
-            <div className="bg-[var(--ui-cream)] px-2 py-3 text-center">
+            <div className="ui-offer-row-accent px-2 py-3 text-center">
               <span className="font-display text-[10px] font-semibold uppercase tracking-widest text-[var(--ui-muted)]">
                 Welcome offer
               </span>
@@ -197,7 +197,7 @@ export function Card({ site, rank }: SiteCardProps) {
               <div className="flex flex-col items-center justify-center border-r border-[var(--ui-border)] py-3">
                 {starsRow}
               </div>
-              <div className="flex flex-col items-center justify-center bg-blue-50/60 py-3">
+              <div className="flex flex-col items-center justify-center ui-score-cell py-3">
                 <span className="font-display text-3xl font-semibold leading-none text-[var(--ui-accent)]">
                   {site.rating.toFixed(1)}
                 </span>

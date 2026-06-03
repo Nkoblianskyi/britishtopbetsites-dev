@@ -146,7 +146,7 @@ export function InfoSections() {
           {factHighlights.map((item) => (
             <div
               key={item.label}
-              className="rounded-lg border-2 border-[var(--ui-border)] bg-gradient-to-b from-blue-50/90 to-white p-4"
+              className="ui-stat-card p-4"
             >
               <p className="font-display text-2xl font-bold tracking-tight text-[var(--ui-accent)] sm:text-3xl">
                 {item.stat}
@@ -175,7 +175,7 @@ export function InfoSections() {
                 ))}
               </div>
 
-              <aside className="mt-4 flex gap-3 rounded-lg border-l-4 border-[var(--ui-gold)] bg-[var(--ui-cream)] px-4 py-3">
+              <aside className="ui-fact-aside mt-4 flex gap-3 px-4 py-3">
                 <span className="shrink-0 font-display text-[10px] font-bold uppercase tracking-widest text-[var(--ui-accent)]">
                   Fact
                 </span>

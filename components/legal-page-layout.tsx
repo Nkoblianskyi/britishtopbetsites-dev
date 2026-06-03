@@ -86,8 +86,8 @@ interface LegalCalloutProps {
 export function LegalCallout({ variant = "info", title, children }: LegalCalloutProps) {
   const styles = {
     warning: "border-l-[var(--ui-red)] bg-red-50",
-    info: "border-l-[var(--ui-accent)] bg-blue-50/80",
-    success: "border-l-blue-600 bg-blue-50",
+    info: "border-l-[var(--ui-accent)] bg-[var(--ui-cream)]",
+    success: "border-l-[var(--ui-accent-light)] bg-[var(--ui-cream)]",
   }
 
   return (
