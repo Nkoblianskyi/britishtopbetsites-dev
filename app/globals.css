@@ -82,9 +82,9 @@
       radial-gradient(ellipse 80% 50% at 50% 0%, rgba(37, 99, 235, 0.12) 0%, transparent 55%),
       linear-gradient(
         180deg,
-        rgba(0, 8, 30, 0.88) 0%,
-        rgba(1, 33, 105, 0.82) 45%,
-        rgba(0, 5, 20, 0.9) 100%
+        rgba(0, 8, 30, 0.68) 0%,
+        rgba(1, 33, 105, 0.58) 45%,
+        rgba(0, 5, 20, 0.72) 100%
       );
   }
 
@@ -439,15 +439,7 @@
 
   .pitch-hero-bg--image::before {
     z-index: 1;
-    background:
-      linear-gradient(
-        105deg,
-        rgba(0, 0, 0, 0.72) 0%,
-        rgba(0, 12, 40, 0.68) 35%,
-        rgba(1, 33, 105, 0.62) 70%,
-        rgba(0, 8, 28, 0.58) 100%
-      ),
-      linear-gradient(180deg, rgba(0, 5, 20, 0.35) 0%, rgba(0, 0, 0, 0.25) 100%);
+    background: rgba(0, 0, 0, 0.6);
   }
 
   .pitch-hero-bg--image::after {
@@ -466,29 +458,88 @@
     color: rgba(238, 243, 250, 0.72);
   }
 
-  .pitch-hero-bg--image h1 {
-    color: #ffffff;
-    text-shadow:
-      0 1px 2px rgba(0, 0, 0, 0.8),
-      0 2px 16px rgba(0, 0, 0, 0.45);
+  .hero-title {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    margin: 0;
   }
 
-  .pitch-hero-bg--image p {
-    color: rgba(245, 248, 255, 0.96);
-    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.65);
+  .hero-title-eyebrow {
+    display: block;
+    font-family: var(--font-display), "Oswald", sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: #ffd84d;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  }
+
+  @media (min-width: 640px) {
+    .hero-title-eyebrow {
+      font-size: 11px;
+    }
+  }
+
+  .hero-title-main {
+    display: block;
+    font-family: var(--font-display), "Oswald", sans-serif;
+    font-size: 1.35rem;
+    font-weight: 700;
+    line-height: 1.12;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
+  }
+
+  @media (min-width: 640px) {
+    .hero-title-main {
+      font-size: 1.55rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .hero-title-main {
+      font-size: 1.85rem;
+      letter-spacing: 0.05em;
+    }
+  }
+
+  .hero-title-accent {
+    color: #ffe566;
+    background: none;
+    -webkit-background-clip: unset;
+    background-clip: unset;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  }
+
+  .hero-title-tail {
+    color: #f0f4fc;
+  }
+
+  .pitch-hero-bg--image .hero-lead {
+    color: #ffffff;
+    font-weight: 500;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
   }
 
   .pitch-hero-bg--image .hero-meta {
-    color: rgba(220, 230, 248, 0.88);
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.55);
+    color: #eef3fa;
+    font-weight: 500;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
   }
 
   .pitch-hero-bg::before {
     content: "";
     position: absolute;
     inset: 0;
-    background: radial-gradient(circle at 80% 20%, rgba(201, 162, 39, 0.12) 0%, transparent 50%);
     pointer-events: none;
+  }
+
+  .pitch-hero-bg:not(.pitch-hero-bg--image)::before {
+    background: radial-gradient(circle at 80% 20%, rgba(201, 162, 39, 0.12) 0%, transparent 50%);
   }
 
   .pitch-center-circle {
