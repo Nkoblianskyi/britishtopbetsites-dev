@@ -61,26 +61,41 @@
 
 @layer components {
   .ui-desktop-bg {
-    background-color: var(--ui-bg-top);
-    background-image:
-      radial-gradient(ellipse 90% 55% at 50% -15%, var(--ui-glow) 0%, transparent 55%),
-      radial-gradient(circle at 85% 95%, rgba(30, 58, 138, 0.35) 0%, transparent 45%),
-      radial-gradient(circle at 10% 80%, rgba(0, 21, 56, 0.5) 0%, transparent 40%),
-      repeating-linear-gradient(
-        90deg,
-        var(--ui-stripe) 0px,
-        var(--ui-stripe) 1px,
-        transparent 1px,
-        transparent 72px
-      ),
-      repeating-linear-gradient(
-        0deg,
-        var(--ui-stripe) 0px,
-        var(--ui-stripe) 1px,
-        transparent 1px,
-        transparent 72px
-      );
+    position: relative;
+    isolation: isolate;
+    background-color: #000a1f;
+    background-image: url("/images/page-bg-betting.jpg");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     min-height: 100vh;
+  }
+
+  .ui-desktop-bg::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    background:
+      radial-gradient(ellipse 80% 50% at 50% 0%, rgba(37, 99, 235, 0.12) 0%, transparent 55%),
+      linear-gradient(
+        180deg,
+        rgba(0, 8, 30, 0.88) 0%,
+        rgba(1, 33, 105, 0.82) 45%,
+        rgba(0, 5, 20, 0.9) 100%
+      );
+  }
+
+  @media (max-width: 1023px) {
+    .ui-desktop-bg {
+      background-attachment: scroll;
+    }
+
+    .ui-desktop-bg::before {
+      position: absolute;
+    }
   }
 
   .ui-panel {
@@ -409,6 +424,36 @@
     color: #eef3fa;
   }
 
+  .pitch-hero-bg--image {
+    background-image: url("/images/hero-sports-betting.jpg");
+    background-size: cover;
+    background-position: center 35%;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: 1024px) {
+    .pitch-hero-bg--image {
+      min-height: 188px;
+    }
+  }
+
+  .pitch-hero-bg--image::before {
+    z-index: 1;
+    background:
+      linear-gradient(
+        105deg,
+        rgba(0, 0, 0, 0.72) 0%,
+        rgba(0, 12, 40, 0.68) 35%,
+        rgba(1, 33, 105, 0.62) 70%,
+        rgba(0, 8, 28, 0.58) 100%
+      ),
+      linear-gradient(180deg, rgba(0, 5, 20, 0.35) 0%, rgba(0, 0, 0, 0.25) 100%);
+  }
+
+  .pitch-hero-bg--image::after {
+    display: none;
+  }
+
   .pitch-hero-bg h1 {
     color: #ffffff;
   }
@@ -419,6 +464,23 @@
 
   .pitch-hero-bg .hero-meta {
     color: rgba(238, 243, 250, 0.72);
+  }
+
+  .pitch-hero-bg--image h1 {
+    color: #ffffff;
+    text-shadow:
+      0 1px 2px rgba(0, 0, 0, 0.8),
+      0 2px 16px rgba(0, 0, 0, 0.45);
+  }
+
+  .pitch-hero-bg--image p {
+    color: rgba(245, 248, 255, 0.96);
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.65);
+  }
+
+  .pitch-hero-bg--image .hero-meta {
+    color: rgba(220, 230, 248, 0.88);
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.55);
   }
 
   .pitch-hero-bg::before {
